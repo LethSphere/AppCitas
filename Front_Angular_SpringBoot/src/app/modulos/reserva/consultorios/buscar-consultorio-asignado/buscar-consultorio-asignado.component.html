@@ -1,0 +1,41 @@
+<div class="container">
+  <h3>Consultorios Asignados a doctores</h3>
+    <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Correo</th>
+        <th>ID Consultorio</th>
+        <th>Ciudad</th>
+        <th>Dirección</th>
+        <th>Número</th>
+        <th>Descripción</th>
+        <th>ID Consultorio Asignado</th>
+        <th>Inicio Reserva</th>
+        <th>Fin Reserva</th>
+        <th>ID Doctor</th>
+        <th>Nombre Especialidad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let consultAsig of listadoConsultoriosAsignados">
+        <td>{{consultAsig.nombre}}</td>
+        <td>{{consultAsig.apellido}}</td>
+        <td>{{consultAsig.correo}}</td>
+        <td>{{consultAsig.idConsultorio}}</td>
+        <td>{{consultAsig.ciudad}}</td>
+        <td>{{consultAsig.direccion}}</td>
+        <td>{{consultAsig.numero}}</td>
+        <td>{{consultAsig.descripcion}}</td>
+        <td>{{consultAsig.idConsultorioAsignado}}</td>
+        <td>{{consultAsig.inicioReserva}}</td>
+        <td>{{consultAsig.finReserva}}</td>
+        <td>{{consultAsig.idDoctor}}</td>
+        <td>{{consultAsig.nombreEspecialidad}}</td>
+
+      </tr>
+      <!-- Añade más filas para cada objeto del JSON -->
+    </tbody>
+  </table>
+</div>    
